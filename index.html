@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Seu audio!</title>
+
+    <style>
+      /* ======== RESET ========  */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* ======== BASE ======== */
+      body {
+        background-color: black;
+      }
+
+      .logo {
+        font-size: 4rem;
+        font-family: 'Yeseva One', cursive;
+        color: white;
+        text-decoration: underline;
+        font-weight: 100;
+      }
+      header {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      h3 {
+        color: white;
+        font-family: 'Yeseva One', cursive;
+      }
+
+      main {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      h3.info {
+        margin: 2rem auto;
+        font-size: 1.5rem;
+      }
+
+      audio {
+        width: 30%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">BYLUMA</h1>
+    </header>
+
+    <main>
+      <h3 class="info">Aperte o play para escutar o áudio que quiser!</h3>
+      <audio autoplay="true" controls>
+        <source src="audio.mp3" type="audio/mp3" />
+        Seu aúdio
+      </audio>
+    </main>
+  </body>
+</html>
